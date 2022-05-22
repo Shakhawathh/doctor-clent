@@ -23,7 +23,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
             patientName: user.displayName,
             phone: event.target.phone.value
         }
-        fetch('http://localhost:5000/booking', {
+        fetch('https://young-meadow-96167.herokuapp.com/booking', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'
